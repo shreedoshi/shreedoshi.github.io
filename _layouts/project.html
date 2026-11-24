@@ -3,9 +3,9 @@ layout: default
 ---
 {% case page.section %}
   {% when "research" %}{% assign back_url = "/research/" %}{% assign back_label = "Research" %}
-  {% when "rocketry" %}{% assign back_url = "/rocketry/" %}{% assign back_label = "Rocketry" %}
+  {% when "projects" %}{% assign back_url = "/projects/" %}{% assign back_label = "Projects" %}
 {% endcase %}
-{% if page.collection == "talks" %}{% assign back_url = "/talks/" %}{% assign back_label = "Posters & talks" %}{% endif %}
+{% if page.collection == "talks" %}{% assign back_url = "/publications/" %}{% assign back_label = "Publications & presentations" %}{% endif %}
 
 <main id="content" class="sd-main">
   <article class="sd-page">

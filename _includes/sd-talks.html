@@ -1,0 +1,13 @@
+{% assign talks = site.talks | sort: "date" | reverse %}
+<ul class="sd-posters">
+  {% for t in talks %}
+  <li class="sd-poster">
+    <a class="sd-poster__thumb" href="{{ t.url | relative_url }}" tabindex="-1" aria-hidden="true">
+      {% if t.poster_image %}<img src="{{ t.poster_image | relative_url }}" alt="" loading="lazy">{% else %}<span class="sd-row__empty"></span>{% endif %}
+    </a>
+    <h3><a href="{{ t.url | relative_url }}">{{ t.title }}</a></h3>
+    <p>{{ t.type }}, {{ t.venue }}</p>
+    <p>{{ t.date | date: "%B %Y" }}{% if t.location %}, {{ t.location }}{% endif %}</p>
+  </li>
+  {% endfor %}
+</ul>

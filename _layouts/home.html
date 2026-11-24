@@ -34,16 +34,14 @@ layout: default
   </section>
   {% endif %}
 
-  {% assign talks = site.talks | sort: "date" | reverse %}
-  {% if talks.size > 0 %}
+  {% if site.data.news %}
   <section class="sd-block">
-    <h2>Posters &amp; talks</h2>
-    <ul class="sd-list">
-      {% for t in talks limit: 4 %}
-      <li><a href="{{ t.url | relative_url }}">{{ t.title }}</a><span>{{ t.venue }}, {{ t.date | date: "%B %Y" }}</span></li>
+    <h2>News</h2>
+    <ul class="sd-news">
+      {% for n in site.data.news limit: 6 %}
+      <li><span class="sd-news__date">{{ n.date }}</span><span class="sd-news__text">{% if n.url %}<a href="{{ n.url | relative_url }}">{{ n.text }}</a>{% else %}{{ n.text }}{% endif %}</span></li>
       {% endfor %}
     </ul>
-    <p><a href="{{ '/talks/' | relative_url }}">All posters and talks</a></p>
   </section>
   {% endif %}
 </main>

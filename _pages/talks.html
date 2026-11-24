@@ -1,24 +1,14 @@
 ---
 layout: modern
-title: "Posters & talks"
-summary: "Conference posters and presentations, with PDFs where available."
-permalink: /talks/
+title: "Publications & presentations"
+permalink: /publications/
+redirect_from:
+  - /talks/
+  - /publications.html
 ---
 
-{% assign talks = site.talks | sort: "date" | reverse %}
-{% if talks.size > 0 %}
-<ul class="sd-posters">
-  {% for t in talks %}
-  <li class="sd-poster">
-    <a class="sd-poster__thumb" href="{{ t.url | relative_url }}" tabindex="-1" aria-hidden="true">
-      {% if t.poster_image %}<img src="{{ t.poster_image | relative_url }}" alt="" loading="lazy">{% else %}<span class="sd-row__empty"></span>{% endif %}
-    </a>
-    <h3><a href="{{ t.url | relative_url }}">{{ t.title }}</a></h3>
-    <p>{{ t.type }}, {{ t.venue }}</p>
-    <p>{{ t.date | date: "%B %Y" }}{% if t.location %}, {{ t.location }}{% endif %}</p>
-  </li>
-  {% endfor %}
-</ul>
-{% else %}
-<p class="sd-empty">Posters from my three conference presentations will be added here soon.</p>
-{% endif %}
+<h2>Publications</h2>
+{% include sd-pubs.html %}
+
+<h2>Posters &amp; talks</h2>
+{% include sd-talks.html %}

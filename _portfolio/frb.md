@@ -15,6 +15,7 @@ image_alt: ""
 caption: ""
 placeholder: "FRB figure"
 in_progress: true
+published: false   # hidden: FRB work isn't on the CV yet. Fill in and delete this line to show it.
 ---
 
 Fast radio bursts (FRBs) are bright radio pulses lasting about a millisecond, most of which come from outside our galaxy. Their origins are still debated, which makes every well-measured burst useful.

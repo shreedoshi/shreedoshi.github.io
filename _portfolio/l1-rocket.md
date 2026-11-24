@@ -1,26 +1,24 @@
 ---
-title: "Level 1 certification rocket"       # TODO: add the rocket's name, e.g. "\"Name\": Level 1 certification rocket"
-summary: "Designing, building and flying a high-power rocket for my Level 1 certification."
-context: "High-power rocketry"
-section: rocketry
+title: "Level 1 high-power rocket"
+summary: "Designing, building and flying my own high-power rocket to earn NAR Level 1 certification, now being upgraded as a test vehicle for optical tracking."
+context: "National Association of Rocketry Level 1 certification"
+section: projects
 featured: true
-order: 4
-permalink: /rocketry/l1-certification/
-role: "Designer and builder"
-group: ""          # TODO: e.g. "National Association of Rocketry" or "Tripoli Rocketry Association"
-dates: ""          # TODO: e.g. flight date
-# image: /images/l1-rocket.jpg           # TODO: launch or pad photo
-image_alt: "My Level 1 rocket"
-caption: ""
-placeholder: "Launch photo"
+order: 3
+permalink: /projects/l1-rocket/
+redirect_from:
+  - /rocketry/l1-certification/
+role: "Designer, builder and flyer"
+group: "National Association of Rocketry"
+image: /images/l1-rocket-launch.jpg
+image_alt: "Red and yellow rocket lifting off from a desert launch pad on a tall plume of white smoke, with mountains behind."
+caption: "Liftoff."
 
 # Fill in whichever specs you have; blank ones are hidden automatically.
 specs:
   - label: "Length"
     value: ""
   - label: "Diameter"
-    value: ""
-  - label: "Liftoff mass"
     value: ""
   - label: "Motor"
     value: ""
@@ -31,35 +29,24 @@ specs:
   - label: "Recovery"
     value: ""
 
-# Photos (put files in /images/):
-# gallery:
-#   - image: /images/l1-build-1.jpg
-#     alt: "Fin can during assembly"
-#     caption: "Fin can during assembly"
-
-# Build log, OpenRocket file, flight report (put files in /files/):
-# docs:
-#   - title: "Build log (PDF)"
-#     url: "/files/l1-build-log.pdf"
-#   - title: "OpenRocket simulation (.ork)"
-#     url: "/files/l1-rocket.ork"
-in_progress: true
+gallery:
+  - image: /images/l1-rocket-pad.jpg
+    alt: "Shree standing beside her red and yellow rocket at a desert launch site."
+    caption: "With the rocket before flight."
+  - image: /images/l1-rocket-launch.jpg
+    alt: "The rocket lifting off on a plume of smoke."
+    caption: "Liftoff."
 ---
 
-A Level 1 certification is the first step into high-power rocketry: build a rocket, fly it on an H or I impulse motor, and recover it in flyable condition.
+Level 1 certification is the entry point to high-power rocketry: design and build a rocket, fly it on an H or I motor, and recover it in flyable condition. I earned my NAR Level 1 certification with the rocket shown here.
 
-## Design
+Certification turned into something larger. I used what I learned to write Level 1 documentation for the Rocket Propulsion Laboratory and helped 11 other members earn their certifications, coordinating bulk motor purchases and advising them through the build and flight.
 
-<!-- TODO: design goals, simulation (e.g. OpenRocket), stability margin, material choices -->
+## Next: a flying test platform
 
-## Build
-
-<!-- TODO: construction steps, what was hard, what you'd change -->
-
-## Flight
-
-<!-- TODO: launch site and date, how the flight went, predicted vs. measured apogee -->
-
-## What I learned
-
-<!-- TODO -->
+I'm upgrading the rocket with reinforced fins, an altimeter and an onboard camera. Each flight will record altitude and video that I can compare against my [ground-based optical tracking system](/projects/rocket-tracking/) and against simulation.
+<!-- TODO: fill in the specs above, add the launch site and date to the caption, and add any build-log or OpenRocket file under docs:, e.g.
+docs:
+  - title: "OpenRocket design (.ork)"
+    url: "/files/l1-rocket.ork"
+-->

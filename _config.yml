@@ -22,10 +22,10 @@ repository               : "shreedoshi/shreedoshi.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png" # TODO: replace with an actual headshot in /images/
+  avatar           : "headshot.jpg"
   name             : "Shree Doshi"
   pronouns         : # TODO: fill in if you'd like this to show, or leave blank to hide
-  bio              : "Undergraduate researcher in astrophysics and astronomical instrumentation at UC San Diego, developing optical distortion correction and astrometric calibration pipelines for PANOSETI at Palomar Observatory."
+  bio              : "Physics (astrophysics) undergraduate at UC San Diego building astrometric calibration pipelines for Panoramic SETI and high-power rockets."
   location         : "La Jolla, CA"
   employer         : "University of California San Diego"
   uri              : # Optional personal URL, distinct from the site URL above
@@ -144,7 +144,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # TODO: add a default social-preview image, e.g. images/og-image.png
+og_image                 : "headshot.jpg"
 og_description           : "Undergraduate researcher in astrophysics and astronomical instrumentation at UC San Diego."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -226,9 +226,6 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
@@ -261,15 +258,6 @@ defaults:
   - scope:
       path: ""
       type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: false
-  # _publications
-  - scope:
-      path: ""
-      type: publications
     values:
       layout: single
       author_profile: true

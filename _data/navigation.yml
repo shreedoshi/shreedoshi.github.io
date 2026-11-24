@@ -4,14 +4,14 @@ main:
   - title: "Research"
     url: /research/
 
-  - title: "Rocketry"
-    url: /rocketry/
+  - title: "Projects"
+    url: /projects/
 
-  - title: "Independent project"
-    url: /independent-research/
+  - title: "Outreach"
+    url: /outreach/
 
-  - title: "Posters & talks"
-    url: /talks/
+  - title: "Publications"
+    url: /publications/
 
   - title: "CV"
     url: /cv/
