@@ -1,0 +1,14 @@
+{% comment %}
+  Shows an image if `src` is set; otherwise, if `placeholder` text is set, shows a
+  styled empty frame so the layout holds its shape until the real figure is added.
+{% endcomment %}
+{% if include.src and include.src != "" %}
+<figure class="sd-figure{% if include.wide %} sd-figure--wide{% endif %}">
+  <img src="{{ include.src | relative_url }}" alt="{{ include.alt | default: '' | escape }}" loading="lazy">
+  {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
+</figure>
+{% elsif include.placeholder and include.placeholder != "" %}
+<figure class="sd-figure sd-figure--empty{% if include.wide %} sd-figure--wide{% endif %}" aria-hidden="true">
+  <div class="sd-figure__frame"><span>{{ include.placeholder }}</span></div>
+</figure>
+{% endif %}

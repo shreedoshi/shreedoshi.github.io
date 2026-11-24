@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<main id="content" class="sd-main">
+  <article class="sd-page">
+    {% if page.title and page.hide_title != true %}
+    <header class="sd-page__head">
+      <h1 class="sd-page__title">{{ page.title }}</h1>
+      {% if page.summary %}<p class="sd-lede">{{ page.summary }}</p>{% endif %}
+    </header>
+    {% endif %}
+    <div class="sd-prose">
+      {{ content }}
+    </div>
+  </article>
+</main>

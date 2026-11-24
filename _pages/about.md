@@ -1,30 +1,18 @@
 ---
 permalink: /
-title: "About"
-author_profile: true
+layout: home
+title: "Shree Doshi"
+tagline: "Undergraduate researcher at UC San Diego. I build calibration software that turns wide-field telescope images into accurate positions on the sky, and I build rockets."
+# photo: /images/headshot.jpg   # TODO: add a headshot to /images/ and uncomment this line
 redirect_from:
   - /about/
   - /about.html
 ---
 
-I'm an undergraduate researcher at the **University of California San Diego** working at the intersection of astrophysics and astronomical instrumentation. I'm interested in how we turn raw detector data into calibrated, scientifically trustworthy measurements of the sky, and in building the software and hardware that makes that possible.
+I work at the intersection of astrophysics and astronomical instrumentation: how raw detector data becomes a calibrated, trustworthy measurement of the sky. On [PANOSETI](https://oirlab.ucsd.edu/PANOSETI.html) at Palomar Observatory, I develop the optical distortion correction and astrometric calibration that map each detector pixel to a position on the sky, so that fast transients seen by different telescopes can be matched and localized.
 
-Current research
-======
+I also study fast radio bursts, run an independent research project, and design and fly high-power rockets. I'm a member of UC San Diego's Rocket Propulsion Laboratory and hold a Level 1 high-power rocketry certification.
+<!-- TODO: check the RPL and L1 wording above is accurate for you (e.g. add NAR or Tripoli). -->
 
-**PANOSETI at Palomar Observatory.** I develop optical distortion correction and astrometric calibration pipelines for [PANOSETI](https://oirlab.ucsd.edu/PANOSETI.html) (Pulsed All-sky Near-infrared Optical SETI), a wide-field instrument designed to search for nanosecond-to-second optical and near-infrared transients. My work maps each detector pixel to an accurate position on the sky, so that events seen by different telescopes can be cross-matched and localized. More on the [Research](/portfolio/) page.
-
-<!-- TODO: Add 1–2 sentences on your RPL work here, mirroring the paragraph above, once the RPL project page is filled in. -->
-
-Research interests
-======
-* Astronomical instrumentation and detector calibration
-* Astrometry and optical distortion modeling
-* Time-domain astronomy and fast optical transients
-* Scientific software and data-reduction pipelines
-<!-- TODO: edit this list so it matches what you'll emphasize in your statements of purpose. -->
-
-Looking ahead
-======
-I'm applying to graduate programs in astronomy & astrophysics, with a focus on instrumentation. Feel free to reach out at [s2doshi@ucsd.edu](mailto:s2doshi@ucsd.edu).
-<!-- TODO: adjust the line above to match the programs you're applying to (e.g. "PhD programs in astronomy and astrophysics starting Fall 2027"). -->
+I'm applying to graduate programs in astronomy and astrophysics with a focus on instrumentation. You can reach me at [s2doshi@ucsd.edu](mailto:s2doshi@ucsd.edu).
+<!-- TODO: adjust to the exact programs/term you're applying for. -->

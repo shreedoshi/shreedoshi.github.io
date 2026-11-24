@@ -1,0 +1,92 @@
+---
+layout: default
+---
+{% case page.section %}
+  {% when "research" %}{% assign back_url = "/research/" %}{% assign back_label = "Research" %}
+  {% when "rocketry" %}{% assign back_url = "/rocketry/" %}{% assign back_label = "Rocketry" %}
+{% endcase %}
+{% if page.collection == "talks" %}{% assign back_url = "/talks/" %}{% assign back_label = "Posters & talks" %}{% endif %}
+
+<main id="content" class="sd-main">
+  <article class="sd-page">
+    <header class="sd-page__head">
+      {% if back_url %}<p class="sd-back"><a href="{{ back_url | relative_url }}">{{ back_label }}</a></p>{% endif %}
+      <h1 class="sd-page__title">{{ page.title }}</h1>
+      {% if page.summary %}<p class="sd-lede">{{ page.summary }}</p>{% endif %}
+
+      {% if page.role or page.group or page.advisor or page.dates or page.venue or page.location %}
+      <dl class="sd-meta">
+        {% if page.role %}<div><dt>Role</dt><dd>{{ page.role }}</dd></div>{% endif %}
+        {% if page.group %}<div><dt>Group</dt><dd>{{ page.group }}</dd></div>{% endif %}
+        {% if page.advisor %}<div><dt>Advisor</dt><dd>{{ page.advisor }}</dd></div>{% endif %}
+        {% if page.dates %}<div><dt>Dates</dt><dd>{{ page.dates }}</dd></div>{% endif %}
+        {% if page.collection == "talks" %}
+          {% if page.type %}<div><dt>Format</dt><dd>{{ page.type }}</dd></div>{% endif %}
+          {% if page.venue %}<div><dt>Venue</dt><dd>{{ page.venue }}</dd></div>{% endif %}
+          {% if page.date %}<div><dt>Date</dt><dd>{{ page.date | date: "%B %Y" }}</dd></div>{% endif %}
+          {% if page.location %}<div><dt>Location</dt><dd>{{ page.location }}</dd></div>{% endif %}
+        {% endif %}
+      </dl>
+      {% endif %}
+    </header>
+
+    {% assign fig = page.image | default: page.poster_image %}
+    {% include sd-figure.html src=fig alt=page.image_alt caption=page.caption placeholder=page.placeholder wide=true %}
+
+    <div class="sd-prose">
+      {{ content }}
+    </div>
+
+    {% if page.specs %}
+    {% assign filled_count = 0 %}
+    {% for s in page.specs %}{% if s.value and s.value != "" %}{% assign filled_count = filled_count | plus: 1 %}{% endif %}{% endfor %}
+    {% if filled_count > 0 %}
+    <section class="sd-block">
+      <h2>Specifications</h2>
+      <dl class="sd-specs">
+        {% for s in page.specs %}{% if s.value and s.value != "" %}<div><dt>{{ s.label }}</dt><dd>{{ s.value }}</dd></div>{% endif %}{% endfor %}
+      </dl>
+    </section>
+    {% endif %}
+    {% endif %}
+
+    {% if page.gallery and page.gallery.size > 0 %}
+    <section class="sd-block">
+      <h2>Photos</h2>
+      <div class="sd-gallery">
+        {% for g in page.gallery %}
+        <figure>
+          <a href="{{ g.image | relative_url }}"><img src="{{ g.image | relative_url }}" alt="{{ g.alt | escape }}" loading="lazy"></a>
+          {% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}
+        </figure>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    {% if page.docs and page.docs.size > 0 %}
+    <section class="sd-block">
+      <h2>Documentation</h2>
+      <ul class="sd-docs">
+        {% for d in page.docs %}
+        <li><a href="{{ d.url | relative_url }}"><i class="fa-regular fa-file-lines" aria-hidden="true"></i> {{ d.title }}</a>{% if d.note %}<span>{{ d.note }}</span>{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    {% if page.slidesurl and page.slidesurl != "" %}
+      {% assign links_present = true %}
+    {% endif %}
+    {% if page.links or links_present %}
+    <p class="sd-actions">
+      {% if links_present %}<a class="sd-button" href="{{ page.slidesurl | relative_url }}">{% if page.type == "Poster" %}Download poster (PDF){% else %}Download slides (PDF){% endif %}</a>{% endif %}
+      {% for l in page.links %}<a class="sd-button sd-button--quiet" href="{{ l.url | relative_url }}">{{ l.label }}</a>{% endfor %}
+    </p>
+    {% endif %}
+
+    {% if page.in_progress %}
+    <p class="sd-note">This write-up is still being expanded. Questions are welcome at <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.</p>
+    {% endif %}
+  </article>
+</main>

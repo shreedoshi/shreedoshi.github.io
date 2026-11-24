@@ -275,23 +275,18 @@ defaults:
       author_profile: true
       share: true
       comments: false
-  # _portfolio
+  # _portfolio (research, rocketry and independent project pages)
   - scope:
       path: ""
       type: portfolio
     values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: false
+      layout: project
   # _talks
   - scope:
       path: ""
       type: talks
     values:
-      layout: talk
-      author_profile: true
-      share: true
+      layout: project
 
 
 # Sass/SCSS

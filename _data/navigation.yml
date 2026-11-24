@@ -2,12 +2,15 @@
 
 main:
   - title: "Research"
-    url: /portfolio/
+    url: /research/
 
-  - title: "Publications"
-    url: /publications/
+  - title: "Rocketry"
+    url: /rocketry/
 
-  - title: "Presentations"
+  - title: "Independent project"
+    url: /independent-research/
+
+  - title: "Posters & talks"
     url: /talks/
 
   - title: "CV"
