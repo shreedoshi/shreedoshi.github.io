@@ -21,7 +21,7 @@ links:
     url: "/files/Doshi_SPURS_2026_poster.pdf"
 ---
 
-[Panoramic SETI](https://oirlab.ucsd.edu/PANOSETI.html) (PANOSETI) is building a wide-field observatory to search for fast optical transients, on timescales from nanoseconds to seconds. Its science spans very-high-energy gamma-ray astrophysics, fast optical transients and possible optical technosignatures. Four experimental telescopes are deployed across Palomar Observatory, separated by 143 to 597 meters.
+Panoramic SETI (PANOSETI) is building a wide-field observatory to search for fast optical transients, on timescales from nanoseconds to seconds. Its science spans very-high-energy gamma-ray astrophysics, fast optical transients and possible optical technosignatures. Four experimental telescopes are deployed across Palomar Observatory, separated by 143 to 597 meters.
 
 Each telescope pairs a Fresnel lens with a 32 × 32 pixel detector covering a 10° × 10° field of view. The wide field lets PANOSETI watch a large patch of sky at once, but the Fresnel optics bend the image unevenly, so the plate scale changes across the detector. A star's measured pixel position doesn't map directly onto its true position on the sky. Without correcting that, we can't say precisely where a transient came from.
 

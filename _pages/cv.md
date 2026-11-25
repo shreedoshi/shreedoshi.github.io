@@ -29,7 +29,7 @@ redirect_from:
     <div class="sd-cv__date">2024 – present</div>
   </div>
   <div class="sd-cv__row">
-    <div><strong>Electronics Lead</strong>, Astrotech, UC Berkeley<br><span class="sd-cv__note">Designed and built a spectrograph to identify aurorae on Jupiter and detect kilonovae; programmed a motorized detector stage and integrated it with the optics, calibration, detector and software subsystems. <a href="/projects/astrotech-spectrograph/">Project page</a></span></div>
+    <div><strong>Electronics Lead</strong>, Astrotech, UC Berkeley<br><span class="sd-cv__note">Designed and built a spectrograph to identify aurorae on Jupiter and detect kilonovae; programmed a motorized detector stage and integrated it with the optics, calibration, detector and software subsystems.</span></div>
     <div class="sd-cv__date">Summer 2026</div>
   </div>
   <div class="sd-cv__row">

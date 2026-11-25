@@ -14,7 +14,6 @@ dates: "2026 – present"
 image: /images/l1-rocket-launch-crop.jpg
 image_alt: "Red and yellow high-power rocket climbing on a smoke trail against a clear sky."
 caption: "The kind of flight the system is designed to follow: my Level 1 rocket shortly after liftoff."
-in_progress: true
 ---
 
 When a rocket flies, its onboard altimeter tells you one story and the simulation you ran beforehand tells you another. I'm building a prototype ground-based optical tracking system to provide a third, independent measurement: reconstructing the trajectory from cameras on the ground.
