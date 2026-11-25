@@ -65,7 +65,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "shree-doshi-b35487270" # from your CV — double check this matches your vanity URL
+  linkedin         : "shree-doshi"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -152,7 +152,7 @@ social:
   type                   : Person
   name                   : *name
   links: # An array of links to social media profiles
-    - "https://linkedin.com/in/shree-doshi-b35487270"
+    - "https://www.linkedin.com/in/shree-doshi"
 
 
 # Analytics

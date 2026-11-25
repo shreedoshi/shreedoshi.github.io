@@ -11,6 +11,7 @@ group: "OIRLab, UC San Diego"
 advisor: "Prof. Shelley Wright, Dr. Jérôme Maire"
 dates: "2024 – present"
 image: /images/panoseti-distortion-maps.png
+thumbnail: /images/panoseti-thumb.jpg
 image_alt: "Two heat maps of the PANOSETI detector showing the measured offset in right ascension and in declination, with matched stars marked."
 caption: "Distortion maps in right ascension (left) and declination (right), interpolated from the offsets between observed and catalog star positions."
 links:
@@ -68,7 +69,7 @@ My SPURS fellowship (summer 2026) supported simulating PANOSETI imaging-mode dat
 
 ## Outputs
 
-* Poster: *Automated astrometric distortion maps for Panoramic SETI*, SPURS, UC San Diego, September 2026
-* Poster: *Characterizing Panoramic SETI astrometric distortion map*, APS Far West Section, UC Santa Cruz, October 2025
-* Talk: Undergraduate Summer Research Conference, UC San Diego, August 2025
+* Poster: [*Automated astrometric distortion maps for Panoramic SETI*](/talks/2026-09-04-spurs-poster/), SPURS, UC San Diego, September 2026
+* Poster: [*Characterizing Panoramic SETI astrometric distortion map*](/talks/2025-10-11-aps-far-west/), APS Far West Section, UC Santa Cruz, October 2025
+* Talk: [*Characterizing Panoramic SETI astrometric distortion maps*](/talks/2025-08-14-ugsrc-talk/), Undergraduate Summer Research Conference, UC San Diego, August 2025
 * Co-author on two Panoramic SETI papers in Proc. SPIE 14149 (2026); see [publications](/publications/)

@@ -1,5 +1,5 @@
 {% assign p = include.post %}
-{% assign fig = p.image | default: p.poster_image %}
+{% assign fig = p.thumbnail | default: p.image | default: p.poster_image %}
 <li class="sd-row">
   <a class="sd-row__fig" href="{{ p.url | relative_url }}" tabindex="-1" aria-hidden="true">
     {% if fig and fig != "" %}

@@ -67,6 +67,10 @@ redirect_from:
 
 <div class="sd-cv">
   <div class="sd-cv__row">
+    <div><strong>Co-lead, Mission Control</strong>, Rocket Propulsion Laboratory</div>
+    <div class="sd-cv__date">Present</div>
+  </div>
+  <div class="sd-cv__row">
     <div><strong>Daedalus Project Lead</strong>, Rocket Propulsion Laboratory<br><span class="sd-cv__note">Lead about 65 students in teams of 4–5 building G-class rockets; mentor teams across CAD, 3D printing, analysis, avionics and launch operations.</span></div>
     <div class="sd-cv__date">Fall 2026 – present</div>
   </div>

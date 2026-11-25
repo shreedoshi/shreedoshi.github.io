@@ -3,47 +3,18 @@ layout: default
 ---
 <header class="sd-hero">
   <div class="sd-hero__text">
-    <h1 class="sd-hero__name">Shree<br>Doshi</h1>
+    <h1 class="sd-hero__name">Shree Doshi</h1>
     <p class="sd-hero__tagline">{{ page.tagline }}</p>
-    <p class="sd-hero__links">
-      <a href="mailto:{{ site.author.email }}">Email</a>
-      {% if site.author.linkedin %}<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>{% endif %}
-      {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}">GitHub</a>{% endif %}
-      <a href="{{ '/cv/' | relative_url }}">CV</a>
-    </p>
   </div>
-  <figure class="sd-hero__grid">
-    <svg id="sd-grid" viewBox="-12 -12 424 424" role="img" aria-labelledby="sd-grid-cap"></svg>
-    <figcaption id="sd-grid-cap">A star field with lens distortion being removed, the correction I build for PANOSETI.</figcaption>
+  {% if page.photo %}
+  <figure class="sd-hero__photo">
+    <img src="{{ page.photo | relative_url }}" alt="{{ page.photo_alt | default: 'Shree Doshi' | escape }}">
   </figure>
+  {% endif %}
 </header>
 
 <main id="content" class="sd-main">
   <section class="sd-prose sd-intro">
-    {% if page.photo %}<img class="sd-photo" src="{{ page.photo | relative_url }}" alt="Shree Doshi">{% endif %}
     {{ content }}
   </section>
-
-  {% assign featured = site.portfolio | where: "featured", true | sort: "order" %}
-  {% if featured.size > 0 %}
-  <section class="sd-block">
-    <h2>Selected work</h2>
-    <ul class="sd-rows">
-      {% for p in featured %}{% include sd-row.html post=p %}{% endfor %}
-    </ul>
-  </section>
-  {% endif %}
-
-  {% if site.data.news %}
-  <section class="sd-block">
-    <h2>News</h2>
-    <ul class="sd-news">
-      {% for n in site.data.news limit: 6 %}
-      <li><span class="sd-news__date">{{ n.date }}</span><span class="sd-news__text">{% if n.url %}<a href="{{ n.url | relative_url }}">{{ n.text }}</a>{% else %}{{ n.text }}{% endif %}</span></li>
-      {% endfor %}
-    </ul>
-  </section>
-  {% endif %}
 </main>
-
-<script src="{{ '/assets/js/sd-grid.js' | relative_url }}" defer></script>
