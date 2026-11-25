@@ -1,7 +1,6 @@
 ---
 layout: modern
 title: "Projects"
-summary: "Rockets I've designed, built and flown, and the optics to track them."
 permalink: /projects/
 redirect_from:
   - /rocketry/
